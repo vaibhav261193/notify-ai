@@ -120,7 +120,6 @@ input[type="color"] {
     background-color: transparent; /* Remove grey background */
 }
 
-
 button {
     background-color: #ff7f50; /* Coral */
     color: white;
@@ -130,7 +129,6 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-
 }
 
 button:hover {
@@ -159,44 +157,15 @@ button:hover {
     max-width: 800px;
 }
 
-.segment-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.segment-pill {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    cursor: pointer;
-    text-align: center;
-    background-color: #f7f7f7;
-    color: #555;
-    font-size: 14px;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    min-width: 200px;
-}
-
-.segment-pill:hover {
-    background-color: #eaeaea;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.segment-pill.selected {
-    background-color: #e0e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: #333;
-}
-
 .segment-wrapper {
     display: flex;
     gap: 15px;  /* Increased gap between segments for better spacing */
     margin-top: 10px; /* Added margin to create space between label and segment options */
     margin-bottom: 20px; /* Added margin to separate the segments from the text area */
-}
-
-.segment-pill {
+ }
+ 
+ 
+ .segment-pill {
     background-color: #f0f0f0;
     padding: 5px 15px;
     border-radius: 5px;
@@ -204,14 +173,46 @@ button:hover {
     display: inline-block;
     font-size: 14px;
     width: auto;
-}
-
-.segment-pill:hover {
+ }
+ 
+ 
+ .segment-pill:hover {
     background-color: #ddd;
-}
-
-#editableSegment {
+ }
+ 
+ 
+ #editableSegment {
     display: inline-block;
     vertical-align: top;
+ }
+
+ #editableTitle {
+    display: inline-block;
+    vertical-align: top;
+ }
+ 
+ .image-selection-container {
+    text-align: center;
+    margin: 20px;
 }
-</style>
+
+.selectable-image {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.selectable-image:hover {
+    border: 2px solid orange;
+}
+
+.editable-image-field {
+    margin-top: 20px;
+}
+
+.editable-image-field img {
+    display: block;
+    margin: 10px auto;
+}
